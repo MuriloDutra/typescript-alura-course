@@ -1,5 +1,5 @@
 export function escapar(
-    target: string,
+    target: any,
     propertyKey: string,
     descriptor: PropertyDescriptor
 ){
