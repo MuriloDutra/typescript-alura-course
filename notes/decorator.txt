@@ -1,0 +1,2 @@
+Decorator is a function that serves like a helper. It's gonna be called always with another function.
+The Decorator can change the "father" function, but stills calls the father.
