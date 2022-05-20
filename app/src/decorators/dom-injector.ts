@@ -1,10 +1,10 @@
 export function domInjector(seletor: string){
     return function(target: any, propertyKey: string){
+        let elemento: HTMLElement;
         const getter = function(){
-            const elemento = document.querySelector(seletor)
+            if(!elemento) elemento = document.querySelector(seletor) as HTMLElement
             return elemento
         }
-        console.log("target: ", target)
         Object.defineProperty(target, propertyKey, {get: getter})
     }
 }
