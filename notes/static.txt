@@ -1,0 +1,1 @@
+1 - A static method of a class is a method that you can access without the need of instantiating the class

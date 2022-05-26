@@ -1,0 +1,1 @@
+1 - The protected type means only those class who inherit your class can see the methods and properties marked as protected

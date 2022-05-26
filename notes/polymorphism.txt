@@ -1,0 +1,14 @@
+1 - Polymorphism is the capacity of a class being referenced with another type, typically the type that class is extending.
+
+EXAMPPLE:
+    //class declaration
+    export class Negociacao extends Imprimivel {
+        //...lots of codes in here
+    }
+
+    //If you instantiate the Negociacao class, you can use the object as a Negociacao or as a Imprimivel
+    const test01 = new Negociacao(new Date, 1, 100)
+    test01.data
+
+    const test02:Imprimivel = new Negociacao(new Date, 1, 100)
+    test02.paraTexto()
