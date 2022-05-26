@@ -1,19 +1,11 @@
 import { Imprimivel } from "../utils/imprimivel.js";
 
-export class Negociacao extends Imprimivel {
+export class Negociacao implements Imprimivel {
     constructor(
         private _data: Date, 
         public readonly quantidade: number, 
         public readonly valor: number
-    ) {
-        /*
-            super() definition: 
-            Calling the constructor from extended class, Imprimivel.
-            If this isn't done, the constructor of Negociacao is gonna be interpreted as a
-            replacement constructor to Imprimivel constructor
-        */
-        super()
-    }
+    ) {}
 
     public static criaDe(dataString: string, quantidadeString: string, valorString: string): Negociacao {
         const exp = /-/g;

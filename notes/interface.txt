@@ -1,0 +1,7 @@
+1 - You can use interfaces to create types and also declare abstract methods.
+2 - The abstract methods declared will have to be implemented by any class who "implements" your interface
+
+EXAMPLE:
+    export interface Imprimivel{
+        paraTexto(): string;
+    }
