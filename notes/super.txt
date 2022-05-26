@@ -1,0 +1,12 @@
+super() definition: 
+    When you call the constructor from an extended class.
+    If this isn't done, the constructor of your current class is gonna be interpreted as a
+    replacement constructor to the the constructor from extended class
+
+export class A implements B {
+    constructor() {
+        super()//Calling the constructor from B class
+        
+        //code from YOUR constructor here...
+    }
+}
