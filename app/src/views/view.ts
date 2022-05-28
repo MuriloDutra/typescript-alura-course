@@ -1,4 +1,4 @@
-export abstract class View<T> {
+export abstract class View<Type> {
 
     protected elemento: HTMLElement;
 
@@ -8,10 +8,10 @@ export abstract class View<T> {
         else throw Error(`Seletor ${seletor} não existe no DOM. Verifique`);
     }
 
-    public update(model: T): void {
+    public update(model: Type): void {
         let template = this.template(model);
         this.elemento.innerHTML = template;
     }
 
-    protected abstract template(model: T): string;
+    protected abstract template(model: Type): string;
 }
