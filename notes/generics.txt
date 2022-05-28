@@ -1,0 +1,12 @@
+1 - Generics is capacity of a class or interface to have a custom type.
+
+EXAMPLE
+    export interface YourInterfaceName <Type> {
+        yourMethod(objeto: Type): boolean;
+    }
+
+    export abstract class YourClassName<Type> {
+        public yourMethod(model: Type): void {
+            //....lots of code in here
+        }
+    }
