@@ -5,7 +5,7 @@ EXAMPLE
         yourMethod(objeto: Type): boolean;
     }
 
-    export abstract class YourClassName<Type> {
+    export class YourClassName<Type> {
         public yourMethod(model: Type): void {
             //....lots of code in here
         }
